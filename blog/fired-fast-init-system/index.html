@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="/css/redox.css" rel="stylesheet" type="text/css">
+
+
+    <title>Redox - Your Next(Gen) OS</title>
+    <link rel="canonical" href="http://localhost:1313/blog/fired-fast-init-system/">
+    <link href="" rel="alternate" type="application/rss+xml" title="Redox - Your Next(Gen) OS">
+  </head>
+  <body>
+    <div class="topbar">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          
+          <li><a href="/blog/">Blog</a></li>
+          
+          <li><a href="https://github.com/redox-os">GitHub</a></li>
+          
+          <li><a href="/manifesto/">Manifesto</a></li>
+          
+        </ul>
+      </nav>
+      <a href="/">
+        <header class="top">
+          <img src="/img/logo.svg" alt="Redox Logo">
+        </header>
+      </a>
+    </div>
+    <div class="content">
+      <h2 class="post-title"><a href="http://localhost:1313/blog/fired-fast-init-system/">fired - fast init system</a></h2>
+      <div class="meta">Author: Łukasz Niemier, Reading time: 2 minutes</div>
+      
+
+<p><code>fired</code> is brand new init system created for Redox OS. It should provide easy
+way to run, manage and supervise all processes inside Redox.</p>
+
+<h2 id="design-principles:bd458ca17a8a070d9765d0bc1efcfcbf">Design principles</h2>
+
+<p>Main design principles are:</p>
+
+<ul>
+<li>Learn from other init systems what to do:
+
+<ul>
+<li>simple and readable configuration files instead of bloated shell scripts (we
+want to use <a href="https://github.com/toml-lang/toml">Toml</a> as configuration language)</li>
+<li>keep PID 1 minimal as possible</li>
+<li>run services in parallel</li>
+</ul></li>
+<li>Learn from other init systems what not to do
+
+<ul>
+<li>be *NIX way, make one thing and do it good</li>
+<li>depend on kernel only</li>
+<li>do not bind to &ldquo;only one true&rdquo; libc</li>
+</ul></li>
+</ul>
+
+<p>Most of the features will be possible due to unique Redox design principle that
+<a href="https://github.com/redox-os/redox/wiki/URL">everything is an URL</a>. Thanks to that principle logging will be done via
+<code>log://</code> URL that will be easy readable by any log aggregating tool that one
+wants, deaemons will provide their status via <code>bus://</code> URL (or similar, design
+process is still on the go), etc. On the other hand it will make <code>fired</code> much
+harder to port to other *NIX platforms, although we will be really happy to see
+if there is someone who will help us creating that possible.</p>
+
+<h2 id="why-not-existing-one:bd458ca17a8a070d9765d0bc1efcfcbf">Why not existing one?</h2>
+
+<ul>
+<li>We are writing Redox kernel in Rust, so why we should use C in user space? We
+want all system tooling to be as safe as possible in Rust.</li>
+<li>All existing init systems are write for systems with other design principles.
+In Redox everything is URL so we should use that. Instead of sockets/pipes
+magic we have built in tool that will solve all problems with IPC.</li>
+<li>Nothing what we found is simple enough or modern enough to fit into our needs.</li>
+</ul>
+
+    </div>
+    <footer>
+      Copyright &copy; 2015 by <a href="https://github.com/redox-os">Redox Developers</a>
+
+    </footer>
+  <script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

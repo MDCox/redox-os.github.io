@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link href="/css/redox.css" rel="stylesheet" type="text/css">
+
+
+    <title>Redox - Your Next(Gen) OS</title>
+    <link rel="canonical" href="http://redox-os.github.io/news/this-week-in-redox-1/">
+    <link href="" rel="alternate" type="application/rss+xml" title="Redox - Your Next(Gen) OS">
+  </head>
+  <body>
+    <div class="topbar">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          
+          <li><a href="/blog/">Blog</a></li>
+          
+          <li><a href="https://github.com/redox-os">GitHub</a></li>
+          
+          <li><a href="/manifesto/">Manifesto</a></li>
+          
+        </ul>
+      </nav>
+      <a href="/">
+        <header class="top">
+          <img src="/img/logo.svg" alt="Redox Logo">
+        </header>
+      </a>
+    </div>
+    <div class="content">
+      <h2 class="post-title"><a href="http://redox-os.github.io/news/this-week-in-redox-1/"></a></h2>
+      
+
+<p>This is the first post in a blog serie tracking the development and progress of Redox, the modular and secure OS, written in Rust. So welcome!</p>
+
+<p><em>(written by Ticki)</em></p>
+
+<h1 id="what-s-new-in-redox:b35c6d2f7cbc962c1c14b032f4de0e78">What&rsquo;s new in Redox?</h1>
+
+<ul>
+<li><p>The development of Redox&rsquo;s package manager, Oxide (<code>ox</code> for short), is started. The source for Oxide can be found <a href="https://github.com/redox-os/oxide">here</a>.</p></li>
+
+<li><p><a href="https://github.com/jackpot51">@jackpot51</a>, <a href="https://github.com/stratact">@stratact</a>, and <a href="https://github.com/tedsta">@tedsta</a> has started implementing support for ZFS, which is planned to be the main file system used in Redox.</p></li>
+
+<li><p><a href="https://github.com/ticki">@ticki</a> has made an icon for Redox (see screenshots).</p></li>
+
+<li><p><a href="https://github.com/hauleth">@hauleth</a> has set a cool website up, using <a href="http://gohugo.io">Hugo</a>.</p></li>
+
+<li><p><a href="https://github.com/ticki">@ticki</a> has cleaned up the style in the whole codebase.</p></li>
+
+<li><p><a href="https://github.com/esell">@esell</a> has cargoified a lot of crates in the main repository.</p></li>
+
+<li><p>Thanks to <a href="https://github.com/stryan">@stryan</a> and <a href="https://github.com/jackpot51">@jackpot51</a>, the window manager is moved to libredox, under the name <code>orbital</code>.</p></li>
+</ul>
+
+<h1 id="what-does-it-look-like:b35c6d2f7cbc962c1c14b032f4de0e78">What does it look like?</h1>
+
+<p>The desktop.
+<img src="https://raw.githubusercontent.com/redox-os/redox/master/img/screenshots/Desktop.png" alt="Redox" />
+
+Yay! Fancy opacity.
+<img src="https://raw.githubusercontent.com/redox-os/redox/master/img/screenshots/Fancy_opacity.png" alt="Redox" />
+
+We have a file manager!
+<img src="https://raw.githubusercontent.com/redox-os/redox/master/img/screenshots/File_manager.png" alt="Redox" />
+
+The boot screen.
+<img src="https://raw.githubusercontent.com/redox-os/redox/master/img/screenshots/Boot.png" alt="Redox" />
+</p>
+
+<h1 id="what-next:b35c6d2f7cbc962c1c14b032f4de0e78">What next?</h1>
+
+<ul>
+<li><p>Moving many functions out of the kernel/libredox. For example, we plan to move orbital out of libredox.</p></li>
+
+<li><p>Porting libstd completely. Many of the libstd functionalities are provided by the <code>common</code> module right now. However, we would like to port libstd to provide support for other crates.</p></li>
+
+<li><p>Adding signatures, hashes, and other crypto stuff to the Oxide package manager.</p></li>
+
+<li><p>Improving documentation.</p></li>
+
+<li><p>Starting a shell (rash).</p></li>
+
+<li><p>Make Redox support 64-bit system.</p></li>
+</ul>
+
+<p>And lots of lots of lots of other stuff.</p>
+
+<h1 id="contributors:b35c6d2f7cbc962c1c14b032f4de0e78">Contributors</h1>
+
+<p>(fetched from <code>Contributors</code> section on Github)</p>
+
+<ul>
+<li>jackpot51</li>
+<li>ticki</li>
+<li>stratact</li>
+<li>esell</li>
+<li>stryan</li>
+<li>tedsta</li>
+<li>layered-esell</li>
+<li>hauleth</li>
+</ul>
+
+    </div>
+    <footer>
+      Copyright &copy; 2015 by <a href="https://github.com/redox-os">Redox Developers</a>
+
+    </footer>
+  </body>
+</html>
