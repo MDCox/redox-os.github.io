@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://redox-os.github.io/</loc>
+    <loc>http://www.redox-os.org/</loc>
     <lastmod>2015-09-12T18:11:35+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://redox-os.github.io/blog/hello-world/</loc>
+    <loc>http://www.redox-os.org/blog/hello-world/</loc>
     <lastmod>2015-09-12T18:11:35+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://redox-os.github.io/news/this-week-in-redox-1/</loc>
+    <loc>http://www.redox-os.org/manifesto/</loc>
   </url>
   
   <url>
-    <loc>http://redox-os.github.io/manifesto/</loc>
+    <loc>http://www.redox-os.org/news/this-week-in-redox-1/</loc>
   </url>
   
 </urlset>
