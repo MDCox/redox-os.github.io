@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://www.redox-os.org/</loc>
-    <lastmod>2015-09-12T18:11:35+02:00</lastmod>
+    <lastmod>2015-10-06T16:42:56+02:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.redox-os.org/blog/fired-fast-init-system/</loc>
+    <lastmod>2015-10-06T16:42:56+02:00</lastmod>
   </url>
   
   <url>
@@ -13,11 +18,11 @@
   </url>
   
   <url>
-    <loc>http://www.redox-os.org/manifesto/</loc>
+    <loc>http://www.redox-os.org/news/this-week-in-redox-1/</loc>
   </url>
   
   <url>
-    <loc>http://www.redox-os.org/news/this-week-in-redox-1/</loc>
+    <loc>http://www.redox-os.org/manifesto/</loc>
   </url>
   
 </urlset>

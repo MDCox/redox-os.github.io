@@ -6,8 +6,62 @@
     <description>Recent content in Blogs on Redox - Your Next(Gen) OS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Sep 2015 18:11:35 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2015 16:42:56 +0200</lastBuildDate>
     <atom:link href="http://www.redox-os.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>fired - fast init system</title>
+      <link>http://www.redox-os.org/blog/fired-fast-init-system/</link>
+      <pubDate>Tue, 06 Oct 2015 16:42:56 +0200</pubDate>
+      
+      <guid>http://www.redox-os.org/blog/fired-fast-init-system/</guid>
+      <description>
+
+&lt;p&gt;&lt;code&gt;fired&lt;/code&gt; is brand new init system created for Redox OS. It should provide easy
+way to run, manage and supervise all processes inside Redox.&lt;/p&gt;
+
+&lt;h2 id=&#34;design-principles:bd458ca17a8a070d9765d0bc1efcfcbf&#34;&gt;Design principles&lt;/h2&gt;
+
+&lt;p&gt;Main design principles are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Learn from other init systems what to do:
+
+&lt;ul&gt;
+&lt;li&gt;simple and readable configuration files instead of bloated shell scripts (we
+want to use &lt;a href=&#34;https://github.com/toml-lang/toml&#34;&gt;Toml&lt;/a&gt; as configuration language)&lt;/li&gt;
+&lt;li&gt;keep PID 1 minimal as possible&lt;/li&gt;
+&lt;li&gt;run services in parallel&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Learn from other init systems what not to do
+
+&lt;ul&gt;
+&lt;li&gt;be *NIX way, make one thing and do it good&lt;/li&gt;
+&lt;li&gt;depend on kernel only&lt;/li&gt;
+&lt;li&gt;do not bind to &amp;ldquo;only one true&amp;rdquo; libc&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most of the features will be possible due to unique Redox design principle that
+&lt;a href=&#34;https://github.com/redox-os/redox/wiki/URL&#34;&gt;everything is an URL&lt;/a&gt;. Thanks to that principle logging will be done via
+&lt;code&gt;log://&lt;/code&gt; URL that will be easy readable by any log aggregating tool that one
+wants, deaemons will provide their status via &lt;code&gt;bus://&lt;/code&gt; URL (or similar, design
+process is still on the go), etc. On the other hand it will make &lt;code&gt;fired&lt;/code&gt; much
+harder to port to other *NIX platforms, although we will be really happy to see
+if there is someone who will help us creating that possible.&lt;/p&gt;
+
+&lt;h2 id=&#34;why-not-existing-one:bd458ca17a8a070d9765d0bc1efcfcbf&#34;&gt;Why not existing one?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We are writing Redox kernel in Rust, so why we should use C in user space? We
+want all system tooling to be as safe as possible in Rust.&lt;/li&gt;
+&lt;li&gt;All existing init systems are write for systems with other design principles.
+In Redox everything is URL so we should use that. Instead of sockets/pipes
+magic we have built in tool that will solve all problems with IPC.&lt;/li&gt;
+&lt;li&gt;Nothing what we found is simple enough or modern enough to fit into our needs.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>And So It Begins…</title>
