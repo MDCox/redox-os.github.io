@@ -10,7 +10,7 @@
     <atom:link href="http://www.redox-os.org/news/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>this week in redox 2</title>
+      <title>This Week in Redox 2</title>
       <link>http://www.redox-os.org/news/this-week-in-redox-2/</link>
       <pubDate>Wed, 14 Oct 2015 19:30:51 +0200</pubDate>
       
@@ -19,47 +19,46 @@
 
 &lt;h1 id=&#34;whats-new-in-redox:8d87b7b6fc651d2b1a5b3749435c6a4f&#34;&gt;Whats new in Redox?&lt;/h1&gt;
 
-&lt;h1 id=&#34;redox-os-redox-closed-issues:8d87b7b6fc651d2b1a5b3749435c6a4f&#34;&gt;redox-os/redox closed issues&lt;/h1&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&amp;amp;str == redox String cleanup&lt;/li&gt;
 &lt;li&gt;Add Bresenham&amp;rsquo;s line drawing algorithm&lt;/li&gt;
 &lt;li&gt;Add &lt;code&gt;box_write&lt;/code&gt; command in &lt;code&gt;filesystem/apps/test/test.rs&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Add &lt;code&gt;wget&lt;/code&gt; command&lt;/li&gt;
 &lt;li&gt;Add &lt;code&gt;write&lt;/code&gt; trait&lt;/li&gt;
-&lt;li&gt;Add leak test for test.rs&lt;/li&gt;
+&lt;li&gt;Add leak test for &lt;code&gt;test.rs&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Add second wallpaper/bootscreen image&lt;/li&gt;
 &lt;li&gt;Add temporary rsa implementation&lt;/li&gt;
 &lt;li&gt;Add user scheme example&lt;/li&gt;
 &lt;li&gt;Added Fedora build instructions.&lt;/li&gt;
-&lt;li&gt;Added dnode, object set, and zil header&lt;/li&gt;
-&lt;li&gt;Changed Fedora setup instructions to use dnf instead of yum&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;dnode,&lt;/code&gt; object set, and &lt;code&gt;zil&lt;/code&gt; header&lt;/li&gt;
+&lt;li&gt;Changed Fedora setup instructions to use &lt;code&gt;dnf&lt;/code&gt; instead of &lt;code&gt;yum&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Document the rest of &lt;code&gt;libredox&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Documentation of the schemes module&lt;/li&gt;
 &lt;li&gt;Dup fork clone exec&lt;/li&gt;
 &lt;li&gt;Formatize more &lt;code&gt;&amp;amp;str.to_string&lt;/code&gt; concats&lt;/li&gt;
-&lt;li&gt;Got NvPairs XDR decoding working&lt;/li&gt;
+&lt;li&gt;Got &lt;code&gt;NvPairs&lt;/code&gt; XDR decoding working&lt;/li&gt;
 &lt;li&gt;Hacky way to read ZFS files&lt;/li&gt;
-&lt;li&gt;Indexize Memory and use Memory in uhci and Cleanup&lt;/li&gt;
-&lt;li&gt;Initial ion commit&lt;/li&gt;
+&lt;li&gt;Indexize &lt;code&gt;Memory&lt;/code&gt; and use &lt;code&gt;Memory&lt;/code&gt; in &lt;code&gt;uhci&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Initial &lt;code&gt;ion&lt;/code&gt; commit&lt;/li&gt;
 &lt;li&gt;LZJB compression for ZFS&lt;/li&gt;
 &lt;li&gt;Manual &lt;code&gt;Debug&lt;/code&gt; workaround for &lt;code&gt;NvList&lt;/code&gt; and &lt;code&gt;NvValue&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;More &lt;code&gt;Memory&lt;/code&gt;ifying and import cleanup&lt;/li&gt;
 &lt;li&gt;More progress toward reading a file&lt;/li&gt;
 &lt;li&gt;Move kvec.rs to vec.rs and use &lt;code&gt;Memory&lt;/code&gt; where possible&lt;/li&gt;
-&lt;li&gt;NvList Serialization&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;NvList&lt;/code&gt; Serialization&lt;/li&gt;
 &lt;li&gt;Opening Programs from the UI Bar Change&lt;/li&gt;
 &lt;li&gt;Playing with the test app&lt;/li&gt;
 &lt;li&gt;Progress on nvpairs and XDR&lt;/li&gt;
 &lt;li&gt;Remove &lt;code&gt;Option::&lt;/code&gt; namespacing and remove some leftover whitespace&lt;/li&gt;
-&lt;li&gt;Removed debug prints in NvPairs decoding in ZFS&lt;/li&gt;
+&lt;li&gt;Removed debug prints in &lt;code&gt;NvPairs&lt;/code&gt; decoding in ZFS&lt;/li&gt;
 &lt;li&gt;Rename &lt;code&gt;BMP&lt;/code&gt; to &lt;code&gt;BMPFile&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Start Neon, a permission model.&lt;/li&gt;
 &lt;li&gt;Starting to read ZAP objects&lt;/li&gt;
-&lt;li&gt;Undo &lt;code&gt;format!&lt;/code&gt;ing and borrow slices instead of Vecs&lt;/li&gt;
-&lt;li&gt;Use lzjb compression to read the MOS meta_dnode&lt;/li&gt;
+&lt;li&gt;Undo &lt;code&gt;format!&lt;/code&gt;ing and borrow slices instead of &lt;code&gt;Vec&lt;/code&gt;s&lt;/li&gt;
+&lt;li&gt;Use LZJB compression to read the MOS &lt;code&gt;meta_dnode&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Userspace networking&lt;/li&gt;
-&lt;li&gt;ls command for ZFS&lt;/li&gt;
+&lt;li&gt;ZFS read support&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ls&lt;/code&gt; command for ZFS&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;what-does-it-look-like:8d87b7b6fc651d2b1a5b3749435c6a4f&#34;&gt;What does it look like?&lt;/h1&gt;
