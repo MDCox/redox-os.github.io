@@ -85,7 +85,7 @@ The boot screen.
 &lt;li&gt;Discuss development infrastructure&lt;/li&gt;
 &lt;li&gt;Move things out of the kernel&lt;/li&gt;
 &lt;li&gt;Link a userspace allocator to libredox&lt;/li&gt;
-&lt;li&gt;Get kernel strings to support UTF-8 with &lt;code&gt;Vec&amp;lt;u8&amp;gt;&lt;/code&gt; instead of &lt;code&gt;Vec&amp;lt;char&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Get kernel strings to support UTF-8 with &lt;code&gt;Vec&amp;lt;u8&amp;gt;&lt;/code&gt; instead of UTF-32 with &lt;code&gt;Vec&amp;lt;char&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;contributors:8d87b7b6fc651d2b1a5b3749435c6a4f&#34;&gt;Contributors&lt;/h1&gt;
