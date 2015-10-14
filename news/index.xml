@@ -6,8 +6,105 @@
     <description>Recent content in News on Redox - Your Next(Gen) OS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Oct 2015 16:42:56 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2015 19:30:51 +0200</lastBuildDate>
     <atom:link href="http://www.redox-os.org/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>this week in redox 2</title>
+      <link>http://www.redox-os.org/news/this-week-in-redox-2/</link>
+      <pubDate>Wed, 14 Oct 2015 19:30:51 +0200</pubDate>
+      
+      <guid>http://www.redox-os.org/news/this-week-in-redox-2/</guid>
+      <description>
+
+&lt;h1 id=&#34;whats-new-in-redox:8d87b7b6fc651d2b1a5b3749435c6a4f&#34;&gt;Whats new in Redox?&lt;/h1&gt;
+
+&lt;h1 id=&#34;redox-os-redox-closed-issues:8d87b7b6fc651d2b1a5b3749435c6a4f&#34;&gt;redox-os/redox closed issues&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;amp;str == redox String cleanup&lt;/li&gt;
+&lt;li&gt;Add Bresenham&amp;rsquo;s line drawing algorithm&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;box_write&lt;/code&gt; command in &lt;code&gt;filesystem/apps/test/test.rs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;wget&lt;/code&gt; command&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;write&lt;/code&gt; trait&lt;/li&gt;
+&lt;li&gt;Add leak test for test.rs&lt;/li&gt;
+&lt;li&gt;Add second wallpaper/bootscreen image&lt;/li&gt;
+&lt;li&gt;Add temporary rsa implementation&lt;/li&gt;
+&lt;li&gt;Add user scheme example&lt;/li&gt;
+&lt;li&gt;Added Fedora build instructions.&lt;/li&gt;
+&lt;li&gt;Added dnode, object set, and zil header&lt;/li&gt;
+&lt;li&gt;Changed Fedora setup instructions to use dnf instead of yum&lt;/li&gt;
+&lt;li&gt;Document the rest of &lt;code&gt;libredox&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Documentation of the schemes module&lt;/li&gt;
+&lt;li&gt;Dup fork clone exec&lt;/li&gt;
+&lt;li&gt;Formatize more &lt;code&gt;&amp;amp;str.to_string&lt;/code&gt; concats&lt;/li&gt;
+&lt;li&gt;Got NvPairs XDR decoding working&lt;/li&gt;
+&lt;li&gt;Hacky way to read ZFS files&lt;/li&gt;
+&lt;li&gt;Indexize Memory and use Memory in uhci and Cleanup&lt;/li&gt;
+&lt;li&gt;Initial ion commit&lt;/li&gt;
+&lt;li&gt;LZJB compression for ZFS&lt;/li&gt;
+&lt;li&gt;Manual &lt;code&gt;Debug&lt;/code&gt; workaround for &lt;code&gt;NvList&lt;/code&gt; and &lt;code&gt;NvValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;More &lt;code&gt;Memory&lt;/code&gt;ifying and import cleanup&lt;/li&gt;
+&lt;li&gt;More progress toward reading a file&lt;/li&gt;
+&lt;li&gt;Move kvec.rs to vec.rs and use &lt;code&gt;Memory&lt;/code&gt; where possible&lt;/li&gt;
+&lt;li&gt;NvList Serialization&lt;/li&gt;
+&lt;li&gt;Opening Programs from the UI Bar Change&lt;/li&gt;
+&lt;li&gt;Playing with the test app&lt;/li&gt;
+&lt;li&gt;Progress on nvpairs and XDR&lt;/li&gt;
+&lt;li&gt;Remove &lt;code&gt;Option::&lt;/code&gt; namespacing and remove some leftover whitespace&lt;/li&gt;
+&lt;li&gt;Removed debug prints in NvPairs decoding in ZFS&lt;/li&gt;
+&lt;li&gt;Rename &lt;code&gt;BMP&lt;/code&gt; to &lt;code&gt;BMPFile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start Neon, a permission model.&lt;/li&gt;
+&lt;li&gt;Starting to read ZAP objects&lt;/li&gt;
+&lt;li&gt;Undo &lt;code&gt;format!&lt;/code&gt;ing and borrow slices instead of Vecs&lt;/li&gt;
+&lt;li&gt;Use lzjb compression to read the MOS meta_dnode&lt;/li&gt;
+&lt;li&gt;Userspace networking&lt;/li&gt;
+&lt;li&gt;ls command for ZFS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;what-does-it-look-like:8d87b7b6fc651d2b1a5b3749435c6a4f&#34;&gt;What does it look like?&lt;/h1&gt;
+
+&lt;p&gt;The desktop.
+&lt;img src=&#34;https://raw.githubusercontent.com/redox-os/redox/e3a2abf42dfad8875642156fee476351153e7ce8/img/screenshots/Desktop.png&#34; alt=&#34;Redox&#34; /&gt;
+
+Yay! Fancy opacity.
+&lt;img src=&#34;https://raw.githubusercontent.com/redox-os/redox/e3a2abf42dfad8875642156fee476351153e7ce8/img/screenshots/Fancy_opacity.png&#34; alt=&#34;Redox&#34; /&gt;
+
+We have a file manager!
+&lt;img src=&#34;https://raw.githubusercontent.com/redox-os/redox/e3a2abf42dfad8875642156fee476351153e7ce8/img/screenshots/File_manager.png&#34; alt=&#34;Redox&#34; /&gt;
+
+The boot screen.
+&lt;img src=&#34;https://raw.githubusercontent.com/redox-os/redox/e3a2abf42dfad8875642156fee476351153e7ce8/img/screenshots/Boot.png&#34; alt=&#34;Redox&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&#34;what-next:8d87b7b6fc651d2b1a5b3749435c6a4f&#34;&gt;What next?&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Continue on &lt;code&gt;x86_64&lt;/code&gt; support&lt;/li&gt;
+&lt;li&gt;Create design documents for Ion&lt;/li&gt;
+&lt;li&gt;Create design documents for Oxide&lt;/li&gt;
+&lt;li&gt;Discuss development infrastructure&lt;/li&gt;
+&lt;li&gt;Move things out of the kernel&lt;/li&gt;
+&lt;li&gt;Link a userspace allocator to libredox&lt;/li&gt;
+&lt;li&gt;Get kernel strings to support UTF-8 with &lt;code&gt;Vec&amp;lt;u8&amp;gt;&lt;/code&gt; instead of &lt;code&gt;Vec&amp;lt;char&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;contributors:8d87b7b6fc651d2b1a5b3749435c6a4f&#34;&gt;Contributors&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Abhishek Chanda &lt;a href=&#34;mailto:abhishek.chanda@emc.com&#34;&gt;abhishek.chanda@emc.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Adam Baxter &lt;a href=&#34;mailto:ambaxter@users.noreply.github.com&#34;&gt;ambaxter@users.noreply.github.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ben Elliott &lt;a href=&#34;mailto:belliott@schemagames.com&#34;&gt;belliott@schemagames.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Jeremy Soller &lt;a href=&#34;mailto:jackpot51@gmail.com&#34;&gt;jackpot51@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Liam Wigney &lt;a href=&#34;mailto:ShadowCreator@users.noreply.github.com&#34;&gt;ShadowCreator@users.noreply.github.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remi Rampin &lt;a href=&#34;mailto:remirampin@gmail.com&#34;&gt;remirampin@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;stratact &lt;a href=&#34;mailto:gurunix57@gmail.com&#34;&gt;gurunix57@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Theodore DeRego &lt;a href=&#34;mailto:tderego94@gmail.com&#34;&gt;tderego94@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ticki &lt;a href=&#34;mailto:Ticki@users.noreply.github.com&#34;&gt;Ticki@users.noreply.github.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Titouan Vervack &lt;a href=&#34;mailto:tivervac@gmail.com&#34;&gt;tivervac@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>This Week in Redox 1</title>
@@ -24,15 +121,11 @@
 &lt;h1 id=&#34;what-s-new-in-redox:b35c6d2f7cbc962c1c14b032f4de0e78&#34;&gt;What&amp;rsquo;s new in Redox?&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;The development of Redox&amp;rsquo;s package manager, Oxide (&lt;code&gt;ox&lt;/code&gt; for short), is started. The source for Oxide can be found &lt;a href=&#34;https://github.com/redox-os/oxide&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt;, &lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt;, and &lt;a href=&#34;https://github.com/tedsta&#34;&gt;@tedsta&lt;/a&gt; has started implementing support for ZFS, which is planned to be the main file system used in Redox.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; has made an icon for Redox (see screenshots).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/hauleth&#34;&gt;@hauleth&lt;/a&gt; has set a cool website up, using &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; has cleaned up the style in the whole codebase.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;The development of Redox&amp;rsquo;s package manager, Oxide (&lt;code&gt;ox&lt;/code&gt; for short), is started. The source for Oxide can be found &lt;a href=&#34;https://github.com/redox-os/oxide&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt;, &lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt;, and &lt;a href=&#34;https://github.com/tedsta&#34;&gt;@tedsta&lt;/a&gt; has started implementing support for ZFS, which is planned to be the main file system used in Redox.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; has made an icon for Redox (see screenshots).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hauleth&#34;&gt;@hauleth&lt;/a&gt; has set a cool website up, using &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; has cleaned up the style in the whole codebase.&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/esell&#34;&gt;@esell&lt;/a&gt; has cargoified a lot of crates in the main repository.&lt;/p&gt;&lt;/li&gt;
 
@@ -57,17 +150,12 @@ The boot screen.
 &lt;h1 id=&#34;what-next:b35c6d2f7cbc962c1c14b032f4de0e78&#34;&gt;What next?&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Moving many functions out of the kernel/libredox. For example, we plan to move orbital out of libredox.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Porting libstd completely. Many of the libstd functionalities are provided by the &lt;code&gt;common&lt;/code&gt; module right now. However, we would like to port libstd to provide support for other crates.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Adding signatures, hashes, and other crypto stuff to the Oxide package manager.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Improving documentation.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Starting a shell (rash).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Make Redox support 64-bit system.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Moving many functions out of the kernel/libredox. For example, we plan to move orbital out of libredox.&lt;/li&gt;
+&lt;li&gt;Porting libstd completely. Many of the libstd functionalities are provided by the &lt;code&gt;common&lt;/code&gt; module right now. However, we would like to port libstd to provide support for other crates.&lt;/li&gt;
+&lt;li&gt;Adding signatures, hashes, and other crypto stuff to the Oxide package manager.&lt;/li&gt;
+&lt;li&gt;Improving documentation.&lt;/li&gt;
+&lt;li&gt;Starting a shell (rash).&lt;/li&gt;
+&lt;li&gt;Make Redox support 64-bit system.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;And lots of lots of lots of other stuff.&lt;/p&gt;

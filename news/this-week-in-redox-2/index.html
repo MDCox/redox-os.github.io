@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+<link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Fira+Mono&subset=latin,latin-ext' rel='stylesheet'>
+<link href="/css/redox.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/github.min.css">
+<script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+    <title>Redox - Your Next(Gen) OS</title>
+    <link rel="canonical" href="http://www.redox-os.org/news/this-week-in-redox-2/">
+    <link href="" rel="alternate" type="application/rss+xml" title="Redox - Your Next(Gen) OS">
+  </head>
+  <body>
+    <div class="topbar">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          
+          <li><a href="/blog/">Blog</a></li>
+          
+          <li><a href="https://github.com/redox-os">GitHub</a></li>
+          
+          <li><a href="/manifesto/">Manifesto</a></li>
+          
+          <li><a href="/news/">News</a></li>
+          
+        </ul>
+      </nav>
+      <a href="/">
+        <header class="top">
+          <img src="/img/logo.svg" alt="Redox Logo">
+        </header>
+      </a>
+    </div>
+    <div class="content">
+      <h2 class="post-title"><a href="http://www.redox-os.org/news/this-week-in-redox-2/">this week in redox 2</a></h2>
+      <div class="meta">Author: Redox Developers, Reading time: 2 minutes</div>
+      
+
+<h1 id="whats-new-in-redox:8d87b7b6fc651d2b1a5b3749435c6a4f">Whats new in Redox?</h1>
+
+<h1 id="redox-os-redox-closed-issues:8d87b7b6fc651d2b1a5b3749435c6a4f">redox-os/redox closed issues</h1>
+
+<ul>
+<li>&amp;str == redox String cleanup</li>
+<li>Add Bresenham&rsquo;s line drawing algorithm</li>
+<li>Add <code>box_write</code> command in <code>filesystem/apps/test/test.rs</code></li>
+<li>Add <code>wget</code> command</li>
+<li>Add <code>write</code> trait</li>
+<li>Add leak test for test.rs</li>
+<li>Add second wallpaper/bootscreen image</li>
+<li>Add temporary rsa implementation</li>
+<li>Add user scheme example</li>
+<li>Added Fedora build instructions.</li>
+<li>Added dnode, object set, and zil header</li>
+<li>Changed Fedora setup instructions to use dnf instead of yum</li>
+<li>Document the rest of <code>libredox</code></li>
+<li>Documentation of the schemes module</li>
+<li>Dup fork clone exec</li>
+<li>Formatize more <code>&amp;str.to_string</code> concats</li>
+<li>Got NvPairs XDR decoding working</li>
+<li>Hacky way to read ZFS files</li>
+<li>Indexize Memory and use Memory in uhci and Cleanup</li>
+<li>Initial ion commit</li>
+<li>LZJB compression for ZFS</li>
+<li>Manual <code>Debug</code> workaround for <code>NvList</code> and <code>NvValue</code></li>
+<li>More <code>Memory</code>ifying and import cleanup</li>
+<li>More progress toward reading a file</li>
+<li>Move kvec.rs to vec.rs and use <code>Memory</code> where possible</li>
+<li>NvList Serialization</li>
+<li>Opening Programs from the UI Bar Change</li>
+<li>Playing with the test app</li>
+<li>Progress on nvpairs and XDR</li>
+<li>Remove <code>Option::</code> namespacing and remove some leftover whitespace</li>
+<li>Removed debug prints in NvPairs decoding in ZFS</li>
+<li>Rename <code>BMP</code> to <code>BMPFile</code></li>
+<li>Start Neon, a permission model.</li>
+<li>Starting to read ZAP objects</li>
+<li>Undo <code>format!</code>ing and borrow slices instead of Vecs</li>
+<li>Use lzjb compression to read the MOS meta_dnode</li>
+<li>Userspace networking</li>
+<li>ls command for ZFS</li>
+</ul>
+
+<h1 id="what-does-it-look-like:8d87b7b6fc651d2b1a5b3749435c6a4f">What does it look like?</h1>
+
+<p>The desktop.
+<img src="https://raw.githubusercontent.com/redox-os/redox/e3a2abf42dfad8875642156fee476351153e7ce8/img/screenshots/Desktop.png" alt="Redox" />
+
+Yay! Fancy opacity.
+<img src="https://raw.githubusercontent.com/redox-os/redox/e3a2abf42dfad8875642156fee476351153e7ce8/img/screenshots/Fancy_opacity.png" alt="Redox" />
+
+We have a file manager!
+<img src="https://raw.githubusercontent.com/redox-os/redox/e3a2abf42dfad8875642156fee476351153e7ce8/img/screenshots/File_manager.png" alt="Redox" />
+
+The boot screen.
+<img src="https://raw.githubusercontent.com/redox-os/redox/e3a2abf42dfad8875642156fee476351153e7ce8/img/screenshots/Boot.png" alt="Redox" />
+</p>
+
+<h1 id="what-next:8d87b7b6fc651d2b1a5b3749435c6a4f">What next?</h1>
+
+<ul>
+<li>Continue on <code>x86_64</code> support</li>
+<li>Create design documents for Ion</li>
+<li>Create design documents for Oxide</li>
+<li>Discuss development infrastructure</li>
+<li>Move things out of the kernel</li>
+<li>Link a userspace allocator to libredox</li>
+<li>Get kernel strings to support UTF-8 with <code>Vec&lt;u8&gt;</code> instead of <code>Vec&lt;char&gt;</code></li>
+</ul>
+
+<h1 id="contributors:8d87b7b6fc651d2b1a5b3749435c6a4f">Contributors</h1>
+
+<ul>
+<li>Abhishek Chanda <a href="mailto:abhishek.chanda@emc.com">abhishek.chanda@emc.com</a></li>
+<li>Adam Baxter <a href="mailto:ambaxter@users.noreply.github.com">ambaxter@users.noreply.github.com</a></li>
+<li>Ben Elliott <a href="mailto:belliott@schemagames.com">belliott@schemagames.com</a></li>
+<li>Jeremy Soller <a href="mailto:jackpot51@gmail.com">jackpot51@gmail.com</a></li>
+<li>Liam Wigney <a href="mailto:ShadowCreator@users.noreply.github.com">ShadowCreator@users.noreply.github.com</a></li>
+<li>Remi Rampin <a href="mailto:remirampin@gmail.com">remirampin@gmail.com</a></li>
+<li>stratact <a href="mailto:gurunix57@gmail.com">gurunix57@gmail.com</a></li>
+<li>Theodore DeRego <a href="mailto:tderego94@gmail.com">tderego94@gmail.com</a></li>
+<li>Ticki <a href="mailto:Ticki@users.noreply.github.com">Ticki@users.noreply.github.com</a></li>
+<li>Titouan Vervack <a href="mailto:tivervac@gmail.com">tivervac@gmail.com</a></li>
+</ul>
+
+    </div>
+    <footer>
+      Copyright &copy; 2015 by <a href="https://github.com/redox-os">Redox Developers</a>
+
+    </footer>
+  </body>
+</html>
