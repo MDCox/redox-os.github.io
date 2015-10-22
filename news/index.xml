@@ -17,20 +17,20 @@
       <guid>http://www.redox-os.org/news/this-week-in-redox-3/</guid>
       <description>
 
-&lt;p&gt;This is the third post of a serie of blog posts tracking the development and progress of Redox, the Rust operating system. If you want to know more about Redox in general, then visit our &lt;a href=&#34;https://github.com/redox-os/redox&#34;&gt;Github page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is the third post of a series of blog posts tracking the development and progress of Redox, the Rust operating system. If you want to know more about Redox in general, then visit our &lt;a href=&#34;https://github.com/redox-os/redox&#34;&gt;Github page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;(written by Ticki)&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;what-s-new-in-redox:c4f8a7f0791cf2b6ad34649b88cc271b&#34;&gt;What&amp;rsquo;s new in Redox?&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt; et al. x86 is almost support, despite the issues with the lack of ability to make naked function in Rust. See the recent PR to Rust and RFC discussions for more information.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt; et al. x86 is almost supported, despite the lack of a naked function attribute in Rust. See the recent PR to Rust and RFC discussions for more information.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt; have upgraded the file manager to include more info about files. This includes file sizes and number of entries in folder.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; with the help of &lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt;, and &lt;a href=&#34;https://github.com/tennix&#34;&gt;@tennix&lt;/a&gt; has started the development of Redox&amp;rsquo;s own advanced, Vi-like text editor, Sodium (&lt;code&gt;na&lt;/code&gt; for short). The recent enchancement of the basic text editor (named &lt;code&gt;Editor&lt;/code&gt;) were rolled back in favor of Sodium. These features will then gradually be added to Sodium.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@tedsta&lt;/a&gt; is working hard on completing the support for ZFS. Check out the ZFS application for trying it out!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/tedsta&#34;&gt;@tedsta&lt;/a&gt; is working hard on completing the support for ZFS. Check out the ZFS application for trying it out!&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;The graphics module now support Bresenham line drawing natively.&lt;/p&gt;&lt;/li&gt;
 
@@ -45,39 +45,40 @@
 
 &lt;p&gt;;)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/redox-os/redox/4c9e2b3df7033966e8f67ded1f619bf257658db3/img/fun/Old.jpg&#34; alt=&#34;Old computer&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/redox-os/redox/master/img/fun/Old.jpg&#34; alt=&#34;Old computer&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;The start screen:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Ticki/redox/4d026acf5e7981cd3a3d12a55206dfd20853fcde/img/screenshots/start.png&#34; alt=&#34;Startscreen&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Ticki/redox/master/img/screenshots/start.png&#34; alt=&#34;Startscreen&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Sodium is working:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Ticki/redox/4d026acf5e7981cd3a3d12a55206dfd20853fcde/img/screenshots/Sodium.png&#34; alt=&#34;Sodium&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/Ticki/redox/blob/master/img/screenshots/Sodium.png&#34; alt=&#34;Sodium&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;WIP on ZFS:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Ticki/redox/4d026acf5e7981cd3a3d12a55206dfd20853fcde/img/screenshots/zfs.png&#34; alt=&#34;ZFS&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Ticki/redox/master/img/screenshots/zfs.png&#34; alt=&#34;ZFS&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Awesome file manager!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Ticki/redox/4d026acf5e7981cd3a3d12a55206dfd20853fcde/img/screenshots/File_manager_v2.png&#34; alt=&#34;File manager&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Ticki/redox/master/img/screenshots/File_manager_v2.png&#34; alt=&#34;File manager&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h1 id=&#34;what-s-next:c4f8a7f0791cf2b6ad34649b88cc271b&#34;&gt;What&amp;rsquo;s next?&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Finish x86 support.&lt;/li&gt;
-&lt;li&gt;Greately extend Sodium.&lt;/li&gt;
+&lt;li&gt;Greatly extend Sodium.&lt;/li&gt;
 &lt;li&gt;Do more work on Bohr (the display manager).&lt;/li&gt;
 &lt;li&gt;Create an RFC-like system.&lt;/li&gt;
 &lt;li&gt;Extend Orbital.&lt;/li&gt;
 &lt;li&gt;Create a GUI library (high-level library with Orbital as back-end).&lt;/li&gt;
 &lt;li&gt;Port &lt;code&gt;liboctavo&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;ZFS scheme and write support&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;contributors:c4f8a7f0791cf2b6ad34649b88cc271b&#34;&gt;Contributors&lt;/h1&gt;
