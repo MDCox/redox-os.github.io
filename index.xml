@@ -31,11 +31,9 @@
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; with the help of &lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt;, and &lt;a href=&#34;https://github.com/tennix&#34;&gt;@tennix&lt;/a&gt; has started the development of Redox&amp;rsquo;s own advanced, Vi-like text editor, Sodium (&lt;code&gt;na&lt;/code&gt; for short). The recent enchancement of the basic text editor (named &lt;code&gt;Editor&lt;/code&gt;) were rolled back in favor of Sodium. These features will then gradually be added to Sodium.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/tedsta&#34;&gt;@tedsta&lt;/a&gt; is working hard on completing the support for ZFS. Check out the ZFS application for trying it out!&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
-&lt;p&gt;/- The graphics module now support Bresenham line drawing natively.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;The graphics module now support Bresenham line drawing natively.&lt;/p&gt;&lt;/li&gt;
 
-&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; has ported &lt;code&gt;libnum&lt;/code&gt;. This makes us able to port &lt;code&gt;liboctavo&lt;/code&gt; in the near future, meaning that we can move on with the development of &lt;code&gt;Oxide&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt; has moved different crates out of kernel space and into user space. Futhermore the folder containing the kernel code is now called &lt;code&gt;kernel&lt;/code&gt; instead of &lt;code&gt;src&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
@@ -67,7 +65,7 @@
 
 &lt;p&gt;Awesome file manager!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Ticki/redox/master/img/screenshots/File_manager_v2.png&#34; alt=&#34;File manager&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;https://files.slack.com/files-pri/T0BQKQ8G1-F0CNRLP51/fm.jpg&#34; alt=&#34;File manager&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h1 id=&#34;what-s-next:c4f8a7f0791cf2b6ad34649b88cc271b&#34;&gt;What&amp;rsquo;s next?&lt;/h1&gt;
