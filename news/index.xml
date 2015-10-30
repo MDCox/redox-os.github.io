@@ -65,7 +65,7 @@
 
 &lt;p&gt;Awesome file manager!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://files.slack.com/files-pri/T0BQKQ8G1-F0CNRLP51/fm.jpg&#34; alt=&#34;File manager&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Ticki/redox/master/img/screenshots/File_manager_v2.png&#34; alt=&#34;File manager&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h1 id=&#34;what-s-next:c4f8a7f0791cf2b6ad34649b88cc271b&#34;&gt;What&amp;rsquo;s next?&lt;/h1&gt;
@@ -275,7 +275,7 @@ The boot screen.
     </item>
     
     <item>
-      <title>This Week in Redox 3</title>
+      <title>This Week in Redox 4</title>
       <link>http://www.redox-os.org/news/this-week-in-redox-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
