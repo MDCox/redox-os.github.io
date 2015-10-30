@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+<link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Fira+Mono&subset=latin,latin-ext' rel='stylesheet'>
+<link href="/css/redox.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/github.min.css">
+<script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+    <title>Redox - Your Next(Gen) OS</title>
+    <link rel="canonical" href="http://www.redox-os.org/news/this-week-in-redox-4/">
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Redox - Your Next(Gen) OS">
+  </head>
+  <body>
+    <div class="topbar">
+      <nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    
+    <li><a href="/blog/">Blog</a></li>
+    
+    <li><a href="https://github.com/redox-os">GitHub</a></li>
+    
+    <li><a href="/manifesto/">Manifesto</a></li>
+    
+    <li><a href="/news/">News</a></li>
+    
+    <li><a href="/index.xml">Feed</a></li>
+  </ul>
+</nav>
+
+      <a href="/">
+        <header class="top">
+          <img src="/img/logo.svg" alt="Redox Logo">
+        </header>
+      </a>
+    </div>
+    <div class="content">
+      <h2 class="post-title"><a href="http://www.redox-os.org/news/this-week-in-redox-4/">This Week in Redox 3</a></h2>
+      <div class="meta">Author: Ticki, Reading time: 2 minutes</div>
+      
+
+<p>This is the fourth post of a series of blog posts tracking the development and progress of Redox, the Rust operating system. If you want to know more about Redox in general, then visit our <a href="https://github.com/redox-os/redox">Github page</a>.</p>
+
+<p><em>(written by Ticki)</em></p>
+
+<h1 id="what-s-new-in-redox:897b056dc9d15b1cc7e94e257f49caa8">What&rsquo;s new in Redox?</h1>
+
+<ul>
+<li><p>Thanks to <a href="https://github.com/jackpot51">@jackpot51</a> with the help of others SDL, dosbox, zlib, libpng, libiconv and freeciv is ported. Following are either almost ported or partially ported: gcc, newlib and binutils.</p></li>
+
+<li><p>Thanks to <a href="https://github.com/ticki">@ticki</a> Redox boots 10-20% faster, due to rewriting of parts in the kernel. This speedup mainly comes from rewriting the path parser and the URL parser.</p></li>
+
+<li><p><a href="https://github.com/nounoursheureux">@nounoursheureux</a> have added a event triggered on quits of programs.</p></li>
+
+<li><p><a href="https://github.com/ticki">@ticki</a> has maked the URLs syntax agnostic, so now everything after the <code>:</code> is left to the provider.</p></li>
+
+<li><p><a href="https://github.com/nobbz">@nobbz</a> have been asked by his professor to give a ten minute talk about Redox.</p></li>
+
+<li><p>Sodium (text editor) has lots of new features. Thanks, <a href="https://github.com/stratact">@stratact</a>, for helping out with the bug fixes.</p></li>
+
+<li><p><a href="https://github.com/achanda">@achanda</a>, <a href="https://github.com/stratact">@stratact</a>, and <a href="https://github.com/ticki">@ticki</a> have cleaned up the warnings, codestyle and done some refactoring in the kernel.</p></li>
+
+<li><p><a href="https://github.com/lazyoxen">@lazyoxen</a> has switched from using a four byte array to represent colors to a Color struct in <code>libredox</code>.</p></li>
+</ul>
+
+<h1 id="what-does-it-look-like:897b056dc9d15b1cc7e94e257f49caa8">What does it look like?</h1>
+
+<p>;)</p>
+
+<p><img src="https://raw.githubusercontent.com/redox-os/redox/master/img/fun/cellphone.jpg" alt="Cellphone" />
+</p>
+
+<p>The start screen:</p>
+
+<p><img src="https://raw.githubusercontent.com/Ticki/redox/master/img/screenshots/start.png" alt="Startscreen" />
+</p>
+
+<h1 id="what-s-next:897b056dc9d15b1cc7e94e257f49caa8">What&rsquo;s next?</h1>
+
+<ul>
+<li>Port stuff</li>
+<li>Finish x86_64 support (it compiles!).</li>
+<li>Extend Sodium.</li>
+<li>Extend Orbital.</li>
+<li>ZFS scheme and write support</li>
+</ul>
+
+<h1 id="contributors:897b056dc9d15b1cc7e94e257f49caa8">Contributors</h1>
+
+<p>(sorted like <code>Contributors</code> section on Github)</p>
+
+<ul>
+<li>jackpot51</li>
+<li>ticki</li>
+<li>stratact</li>
+<li>tedsta</li>
+<li>esell</li>
+<li>achanda</li>
+<li>nobbz</li>
+<li>lazyoxen</li>
+<li>ambaxter</li>
+<li>stryan</li>
+<li>mgattozzi</li>
+<li>layered-esell</li>
+<li>bheesham</li>
+<li>hauleth</li>
+<li>remram44</li>
+<li>shadowcreator</li>
+<li>n3mes1s</li>
+<li>flashyoshi</li>
+<li>nounoursheureux</li>
+</ul>
+
+    </div>
+    <footer>
+      Copyright &copy; 2015 by <a href="https://github.com/redox-os">Redox Developers</a>
+
+    </footer>
+  </body>
+</html>
