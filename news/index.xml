@@ -30,6 +30,8 @@
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/nounoursheureux&#34;&gt;@nounoursheureux&lt;/a&gt; have added a event triggered on quits of programs.&lt;/p&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt; greatly improved the file manager. Now the file type is described in a new column, and the way of loading relevant icons based on the filetype is rewritten.&lt;/p&gt;&lt;/li&gt;
+
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; has maked the URLs syntax agnostic, so now everything after the &lt;code&gt;:&lt;/code&gt; is left to the provider.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/nobbz&#34;&gt;@nobbz&lt;/a&gt; have been asked by his professor to give a ten minute talk about Redox.&lt;/p&gt;&lt;/li&gt;
