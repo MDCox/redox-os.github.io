@@ -24,23 +24,23 @@
 &lt;h1 id=&#34;what-s-new-in-redox:897b056dc9d15b1cc7e94e257f49caa8&#34;&gt;What&amp;rsquo;s new in Redox?&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt; with the help of others SDL, dosbox, zlib, libpng, libiconv and freeciv is ported. Following are either almost ported or partially ported: gcc, newlib and binutils.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt; with the help of others, SDL, dosbox, zlib, libpng, libiconv and freeciv have been ported. Following are either almost ported or partially ported: gcc, newlib and binutils.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; Redox boots 10-20% faster, due to rewriting of parts in the kernel. This speedup mainly comes from rewriting the path parser and the URL parser.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; Redox boots 10-20% faster, due to rewriting some parts of the kernel. This speedup mainly comes from rewriting the path parser and the URL parser.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/nounoursheureux&#34;&gt;@nounoursheureux&lt;/a&gt; have added a event triggered on quits of programs.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/nounoursheureux&#34;&gt;@nounoursheureux&lt;/a&gt; added an event triggered on programs exiting.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt; greatly improved the file manager. Now the file type is described in a new column, and the way of loading relevant icons based on the filetype is rewritten.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt; greatly improved the file manager. Now the file type is described in a new column, and the way the correct icons are loaded based on the file type was rewritten.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; has maked the URLs syntax agnostic, so now everything after the &lt;code&gt;:&lt;/code&gt; is left to the provider.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; made the URL syntax agnostic, so now everything after the &lt;code&gt;:&lt;/code&gt; is left to the provider.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/nobbz&#34;&gt;@nobbz&lt;/a&gt; have been asked by his professor to give a ten minute talk about Redox.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/nobbz&#34;&gt;@nobbz&lt;/a&gt; has been asked by his professor to give a ten minute talk about Redox.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Sodium (text editor) has lots of new features. Thanks, &lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt;, for helping out with the bug fixes.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/achanda&#34;&gt;@achanda&lt;/a&gt;, &lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt;, and &lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; have cleaned up the warnings, codestyle and done some refactoring in the kernel.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/achanda&#34;&gt;@achanda&lt;/a&gt;, &lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt;, and &lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; cleaned up the warnings, code style and did some refactoring in the kernel.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/lazyoxen&#34;&gt;@lazyoxen&lt;/a&gt; has switched from using a four byte array to represent colors to a Color struct in &lt;code&gt;libredox&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/lazyoxen&#34;&gt;@lazyoxen&lt;/a&gt; switched from a four byte array to a Color struct to represent colors in &lt;code&gt;libredox&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;what-does-it-look-like:897b056dc9d15b1cc7e94e257f49caa8&#34;&gt;What does it look like?&lt;/h1&gt;
@@ -110,7 +110,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt; et al. x86_64 is almost supported, despite the lack of a naked function attribute in Rust. See the recent PR to Rust and RFC discussions for more information.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt; have upgraded the file manager to include more info about files. This includes file sizes and number of entries in folder.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt; have upgraded the file manager to include more info about files. This includes file size and number of entries in folder.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; with the help of &lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt;, and &lt;a href=&#34;https://github.com/tennix&#34;&gt;@tennix&lt;/a&gt; has started the development of Redox&amp;rsquo;s own advanced, Vi-like text editor, Sodium (&lt;code&gt;na&lt;/code&gt; for short). The recent enchancement of the basic text editor (named &lt;code&gt;Editor&lt;/code&gt;) were rolled back in favor of Sodium. These features will then gradually be added to Sodium.&lt;/p&gt;&lt;/li&gt;
 
@@ -118,11 +118,11 @@
 
 &lt;li&gt;&lt;p&gt;The graphics module now support Bresenham line drawing natively.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; has ported &lt;code&gt;libnum&lt;/code&gt;. This makes us able to port &lt;code&gt;liboctavo&lt;/code&gt; in the near future, meaning that we can move on with the development of &lt;code&gt;Oxide&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; has ported &lt;code&gt;libnum&lt;/code&gt;. This will allow us to port &lt;code&gt;liboctavo&lt;/code&gt; in the near future, meaning that we can move on with the development of &lt;code&gt;Oxide&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt; has moved different crates out of kernel space and into user space. Futhermore the folder containing the kernel code is now called &lt;code&gt;kernel&lt;/code&gt; instead of &lt;code&gt;src&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt; moved different crates out of kernel space and into user space. Futhermore the folder containing the kernel code is now called &lt;code&gt;kernel&lt;/code&gt; instead of &lt;code&gt;src&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/nobbz&#34;&gt;@nobbz&lt;/a&gt; Redox is now building on Windows.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/nobbz&#34;&gt;@nobbz&lt;/a&gt;, Redox now builds on Windows.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;what-does-it-look-like:c4f8a7f0791cf2b6ad34649b88cc271b&#34;&gt;What does it look like?&lt;/h1&gt;
@@ -202,14 +202,14 @@
 &lt;h1 id=&#34;whats-new-in-redox:8d87b7b6fc651d2b1a5b3749435c6a4f&#34;&gt;Whats new in Redox?&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&amp;amp;str == redox String cleanup&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;str&lt;/code&gt; == &lt;code&gt;redox&lt;/code&gt; String cleanup&lt;/li&gt;
 &lt;li&gt;Add Bresenham&amp;rsquo;s line drawing algorithm&lt;/li&gt;
 &lt;li&gt;Add &lt;code&gt;box_write&lt;/code&gt; command in &lt;code&gt;filesystem/apps/test/test.rs&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Add &lt;code&gt;wget&lt;/code&gt; command&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;write&lt;/code&gt; trait&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;Write&lt;/code&gt; trait&lt;/li&gt;
 &lt;li&gt;Add leak test for &lt;code&gt;test.rs&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Add second wallpaper/bootscreen image&lt;/li&gt;
-&lt;li&gt;Add temporary rsa implementation&lt;/li&gt;
+&lt;li&gt;Add temporary RSA implementation&lt;/li&gt;
 &lt;li&gt;Add user scheme example&lt;/li&gt;
 &lt;li&gt;Added Fedora build instructions.&lt;/li&gt;
 &lt;li&gt;Added &lt;code&gt;dnode,&lt;/code&gt; object set, and &lt;code&gt;zil&lt;/code&gt; header&lt;/li&gt;
@@ -258,7 +258,7 @@ The boot screen.
 &lt;img src=&#34;https://raw.githubusercontent.com/redox-os/redox/e3a2abf42dfad8875642156fee476351153e7ce8/img/screenshots/Boot.png&#34; alt=&#34;Redox&#34; /&gt;
 &lt;/p&gt;
 
-&lt;h1 id=&#34;what-next:8d87b7b6fc651d2b1a5b3749435c6a4f&#34;&gt;What next?&lt;/h1&gt;
+&lt;h1 id=&#34;what-s-next:8d87b7b6fc651d2b1a5b3749435c6a4f&#34;&gt;What&amp;rsquo;s next?&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Continue on &lt;code&gt;x86_64&lt;/code&gt; support&lt;/li&gt;
@@ -295,20 +295,20 @@ The boot screen.
       <guid>http://www.redox-os.org/news/this-week-in-redox-1/</guid>
       <description>
 
-&lt;p&gt;This is the first post in a blog serie tracking the development and progress of Redox, the modular and secure OS, written in Rust. So welcome!&lt;/p&gt;
+&lt;p&gt;This is the first post in a blog series tracking the development and progress of Redox, the modular and secure OS, written in Rust. So welcome!&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;(written by Ticki)&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;what-s-new-in-redox:b35c6d2f7cbc962c1c14b032f4de0e78&#34;&gt;What&amp;rsquo;s new in Redox?&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;The development of Redox&amp;rsquo;s package manager, Oxide (&lt;code&gt;ox&lt;/code&gt; for short), is started. The source for Oxide can be found &lt;a href=&#34;https://github.com/redox-os/oxide&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt;, &lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt;, and &lt;a href=&#34;https://github.com/tedsta&#34;&gt;@tedsta&lt;/a&gt; has started implementing support for ZFS, which is planned to be the main file system used in Redox.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; has made an icon for Redox (see screenshots).&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hauleth&#34;&gt;@hauleth&lt;/a&gt; has set a cool website up, using &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; has cleaned up the style in the whole codebase.&lt;/li&gt;
+&lt;li&gt;The development of Redox&amp;rsquo;s package manager, Oxide (&lt;code&gt;ox&lt;/code&gt; for short), has started. The source for Oxide can be found &lt;a href=&#34;https://github.com/redox-os/oxide&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt;, &lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt;, and &lt;a href=&#34;https://github.com/tedsta&#34;&gt;@tedsta&lt;/a&gt; have started implementing support for ZFS, which is planned to be the main file system used in Redox.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; made an icon for Redox (see screenshots).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hauleth&#34;&gt;@hauleth&lt;/a&gt; set up a cool website, using &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; cleaned up the style in the whole codebase.&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/esell&#34;&gt;@esell&lt;/a&gt; has cargoified a lot of crates in the main repository.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/esell&#34;&gt;@esell&lt;/a&gt; cargoified a lot of crates in the main repository.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/stryan&#34;&gt;@stryan&lt;/a&gt; and &lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt;, the window manager is moved to libredox, under the name &lt;code&gt;orbital&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -328,7 +328,7 @@ The boot screen.
 &lt;img src=&#34;https://raw.githubusercontent.com/redox-os/redox/master/img/screenshots/Boot.png&#34; alt=&#34;Redox&#34; /&gt;
 &lt;/p&gt;
 
-&lt;h1 id=&#34;what-next:b35c6d2f7cbc962c1c14b032f4de0e78&#34;&gt;What next?&lt;/h1&gt;
+&lt;h1 id=&#34;what-s-next:b35c6d2f7cbc962c1c14b032f4de0e78&#34;&gt;What&amp;rsquo;s next?&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Moving many functions out of the kernel/libredox. For example, we plan to move orbital out of libredox.&lt;/li&gt;
