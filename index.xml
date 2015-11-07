@@ -6,8 +6,99 @@
     <description>Recent content on Redox - Your Next(Gen) OS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2015 17:01:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2015 17:01:00 +0200</lastBuildDate>
     <atom:link href="http://www.redox-os.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>This Week in Redox 4</title>
+      <link>http://www.redox-os.org/news/this-week-in-redox-5/</link>
+      <pubDate>Sat, 07 Nov 2015 17:01:00 +0200</pubDate>
+      
+      <guid>http://www.redox-os.org/news/this-week-in-redox-5/</guid>
+      <description>
+
+&lt;p&gt;This is the fifth post of a series of blog posts tracking the development and progress of Redox, the Rust operating system. If you want to know more about Redox in general, then visit our &lt;a href=&#34;https://github.com/redox-os/redox&#34;&gt;Github page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(written by Ticki)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;what-s-new-in-redox:6e3f200f75687b33625364256d63593e&#34;&gt;What&amp;rsquo;s new in Redox?&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt; and &lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; are currently cleaning up the kernel, moving lots of things which does not belong to kernel space, into userspace.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; has added lots of new features to Sodium (text editor), such as auto indentation, prompt, configuration, syntax highlighting, scrolling, delete motions and so on.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt; has made the kernel space file system (used upon boot) writable.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/tedsta&#34;&gt;@tedsta&lt;/a&gt; is continuing working on ZFS support.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/nounoursheureux&#34;&gt;nounoursheureux&lt;/a&gt;, we now got both &lt;code&gt;cd&lt;/code&gt; and &lt;code&gt;pwd&lt;/code&gt; commands in the console.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ticki&#34;&gt;@ticki&lt;/a&gt; has added support for relative paths in the path parser.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt; is adding support for multithreading.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt; have added a .get_slice() method for the kernel, and begin removing calls for panicable methods in the kernel (to prevent kernel panics).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/stratact&#34;&gt;@stratact&lt;/a&gt; has cleaned up a bunch of code for following the Rust conventions.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/jackpot51&#34;&gt;@jackpot51&lt;/a&gt; Redox with x86_64 support now compiles (!), but does not boot properly yet.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;And lots of small stuff&amp;hellip;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;what-does-it-look-like:6e3f200f75687b33625364256d63593e&#34;&gt;What does it look like?&lt;/h1&gt;
+
+&lt;p&gt;;)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/redox-os/redox/master/img/fun/fancy.jpg&#34; alt=&#34;Cellphone&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Since the changes are mostly internal, we don&amp;rsquo;t got a lot of new fancy screenshots except for Sodium:&lt;/p&gt;
+
+&lt;p&gt;Sodium has syntax highlighting and a lot of new features:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/redox-os/redox/master/img/fun/Sodium_v1.jpg&#34; alt=&#34;Sodium&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&#34;what-s-next:6e3f200f75687b33625364256d63593e&#34;&gt;What&amp;rsquo;s next?&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Get the &lt;code&gt;correctness&lt;/code&gt; branch compiling and booting.&lt;/li&gt;
+&lt;li&gt;Extend &lt;code&gt;sodium&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Optimize things&lt;/li&gt;
+&lt;li&gt;Get ZFS writable&lt;/li&gt;
+&lt;li&gt;Extend the multithreading support&lt;/li&gt;
+&lt;li&gt;Cleanup code style&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;contributors:6e3f200f75687b33625364256d63593e&#34;&gt;Contributors&lt;/h1&gt;
+
+&lt;p&gt;(sorted like &lt;code&gt;Contributors&lt;/code&gt; section on Github)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;jackpot51&lt;/li&gt;
+&lt;li&gt;ticki&lt;/li&gt;
+&lt;li&gt;stratact&lt;/li&gt;
+&lt;li&gt;tedsta&lt;/li&gt;
+&lt;li&gt;esell&lt;/li&gt;
+&lt;li&gt;achanda&lt;/li&gt;
+&lt;li&gt;nobbz&lt;/li&gt;
+&lt;li&gt;lazyoxen&lt;/li&gt;
+&lt;li&gt;ambaxter&lt;/li&gt;
+&lt;li&gt;stryan&lt;/li&gt;
+&lt;li&gt;mgattozzi&lt;/li&gt;
+&lt;li&gt;nounoursheureux&lt;/li&gt;
+&lt;li&gt;hauleth&lt;/li&gt;
+&lt;li&gt;bheesham&lt;/li&gt;
+&lt;li&gt;layered-esell&lt;/li&gt;
+&lt;li&gt;remram44&lt;/li&gt;
+&lt;li&gt;flashyoshi&lt;/li&gt;
+&lt;li&gt;shadowcreator&lt;/li&gt;
+&lt;li&gt;n3mes1s&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>This Week in Redox 4</title>

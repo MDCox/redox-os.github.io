@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+<link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Fira+Mono&subset=latin,latin-ext' rel='stylesheet'>
+<link href="/css/redox.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/github.min.css">
+<script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+    <title>Redox - Your Next(Gen) OS</title>
+    <link rel="canonical" href="http://www.redox-os.org/news/this-week-in-redox-5/">
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Redox - Your Next(Gen) OS">
+  </head>
+  <body>
+    <div class="topbar">
+      <nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    
+    <li><a href="/blog/">Blog</a></li>
+    
+    <li><a href="https://github.com/redox-os">GitHub</a></li>
+    
+    <li><a href="/manifesto/">Manifesto</a></li>
+    
+    <li><a href="/news/">News</a></li>
+    
+    <li><a href="/index.xml">Feed</a></li>
+  </ul>
+</nav>
+
+      <a href="/">
+        <header class="top">
+          <img src="/img/logo.svg" alt="Redox Logo">
+        </header>
+      </a>
+    </div>
+    <div class="content">
+      <h2 class="post-title"><a href="http://www.redox-os.org/news/this-week-in-redox-5/">This Week in Redox 4</a></h2>
+      <div class="meta">Author: Ticki, Reading time: 2 minutes</div>
+      
+
+<p>This is the fifth post of a series of blog posts tracking the development and progress of Redox, the Rust operating system. If you want to know more about Redox in general, then visit our <a href="https://github.com/redox-os/redox">Github page</a>.</p>
+
+<p><em>(written by Ticki)</em></p>
+
+<h1 id="what-s-new-in-redox:6e3f200f75687b33625364256d63593e">What&rsquo;s new in Redox?</h1>
+
+<ul>
+<li><p><a href="https://github.com/jackpot51">@jackpot51</a> and <a href="https://github.com/ticki">@ticki</a> are currently cleaning up the kernel, moving lots of things which does not belong to kernel space, into userspace.</p></li>
+
+<li><p><a href="https://github.com/ticki">@ticki</a> has added lots of new features to Sodium (text editor), such as auto indentation, prompt, configuration, syntax highlighting, scrolling, delete motions and so on.</p></li>
+
+<li><p><a href="https://github.com/jackpot51">@jackpot51</a> has made the kernel space file system (used upon boot) writable.</p></li>
+
+<li><p><a href="https://github.com/tedsta">@tedsta</a> is continuing working on ZFS support.</p></li>
+
+<li><p>Thanks to <a href="https://github.com/nounoursheureux">nounoursheureux</a>, we now got both <code>cd</code> and <code>pwd</code> commands in the console.</p></li>
+
+<li><p><a href="https://github.com/ticki">@ticki</a> has added support for relative paths in the path parser.</p></li>
+
+<li><p><a href="https://github.com/jackpot51">@jackpot51</a> is adding support for multithreading.</p></li>
+
+<li><p><a href="https://github.com/stratact">@stratact</a> have added a .get_slice() method for the kernel, and begin removing calls for panicable methods in the kernel (to prevent kernel panics).</p></li>
+
+<li><p><a href="https://github.com/stratact">@stratact</a> has cleaned up a bunch of code for following the Rust conventions.</p></li>
+
+<li><p>Thanks to <a href="https://github.com/jackpot51">@jackpot51</a> Redox with x86_64 support now compiles (!), but does not boot properly yet.</p></li>
+
+<li><p>And lots of small stuff&hellip;</p></li>
+</ul>
+
+<h1 id="what-does-it-look-like:6e3f200f75687b33625364256d63593e">What does it look like?</h1>
+
+<p>;)</p>
+
+<p><img src="https://raw.githubusercontent.com/redox-os/redox/master/img/fun/fancy.jpg" alt="Cellphone" />
+</p>
+
+<p>Since the changes are mostly internal, we don&rsquo;t got a lot of new fancy screenshots except for Sodium:</p>
+
+<p>Sodium has syntax highlighting and a lot of new features:</p>
+
+<p><img src="https://raw.githubusercontent.com/redox-os/redox/master/img/fun/Sodium_v1.jpg" alt="Sodium" />
+</p>
+
+<h1 id="what-s-next:6e3f200f75687b33625364256d63593e">What&rsquo;s next?</h1>
+
+<ul>
+<li>Get the <code>correctness</code> branch compiling and booting.</li>
+<li>Extend <code>sodium</code></li>
+<li>Optimize things</li>
+<li>Get ZFS writable</li>
+<li>Extend the multithreading support</li>
+<li>Cleanup code style</li>
+</ul>
+
+<h1 id="contributors:6e3f200f75687b33625364256d63593e">Contributors</h1>
+
+<p>(sorted like <code>Contributors</code> section on Github)</p>
+
+<ul>
+<li>jackpot51</li>
+<li>ticki</li>
+<li>stratact</li>
+<li>tedsta</li>
+<li>esell</li>
+<li>achanda</li>
+<li>nobbz</li>
+<li>lazyoxen</li>
+<li>ambaxter</li>
+<li>stryan</li>
+<li>mgattozzi</li>
+<li>nounoursheureux</li>
+<li>hauleth</li>
+<li>bheesham</li>
+<li>layered-esell</li>
+<li>remram44</li>
+<li>flashyoshi</li>
+<li>shadowcreator</li>
+<li>n3mes1s</li>
+</ul>
+
+    </div>
+    <footer>
+      Copyright &copy; 2015 by <a href="https://github.com/redox-os">Redox Developers</a>
+
+    </footer>
+  </body>
+</html>
